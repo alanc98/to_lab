@@ -39,6 +39,8 @@
 
 #include "sample_app_msgids.h"
 
+#include "mqtt_msgids.h"
+
 #if 0
 #include "hs_msgids.h"
 #include "fm_msgids.h"
@@ -54,6 +56,7 @@ static TO_subscription_t  TO_SubTable[] =
             {TO_LAB_DATA_TYPES_MID, {0,0},  4},
             {CI_LAB_HK_TLM_MID,     {0,0},  4},
             {SAMPLE_APP_HK_TLM_MID, {0,0},  4},
+            {MQTT_HK_TLM_MID,       {0,0},  4},
 
 #if 0
             /* Add these if needed */
@@ -78,7 +81,6 @@ static TO_subscription_t  TO_SubTable[] =
             {CFE_ES_APP_TLM_MID,         {0,0},  4},
             {CFE_ES_MEMSTATS_TLM_MID,    {0,0},  4},
 
-            {TO_UNUSED,              {0,0},  0},
             {TO_UNUSED,              {0,0},  0},
             {TO_UNUSED,              {0,0},  0}
 };
